@@ -29,6 +29,6 @@ public class Pregunta {
     @OneToMany
     private ArrayList<Opcion> opciones;
 
-    private int opcionCorrecta;
+   // private int opcionCorrecta;
 
 }

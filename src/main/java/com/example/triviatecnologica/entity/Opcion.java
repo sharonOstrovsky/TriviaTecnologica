@@ -15,4 +15,6 @@ public class Opcion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String descripcion;
+    private boolean respuesta;
 }
