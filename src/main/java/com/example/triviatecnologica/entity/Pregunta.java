@@ -23,6 +23,7 @@ public class Pregunta {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Categoria categoria;
+    private int nivel; //por edad del usuario
     private String descripcion;
 
     @OneToMany

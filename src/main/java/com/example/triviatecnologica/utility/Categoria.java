@@ -2,7 +2,9 @@ package com.example.triviatecnologica.utility;
 
 public enum Categoria {
 
-    deportes, geografia, historia, arte, ciencia;
+    tecnologia, conocimientoGeneral, matematica, entretenimiento, geografia;
 }
 
-//tecnologia, deporte, ciencia, geografia, historia
+
+
+//deportes, geografia, historia, arte, ciencia;
