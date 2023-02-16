@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 
 @Entity
@@ -26,9 +27,25 @@ public class Pregunta {
     private int nivel; //por edad del usuario
     private String descripcion;
 
-    @OneToMany
-    private ArrayList<Opcion> opciones;
+    private String opcionA;
+    private String opcionB;
+    private String opcionC;
+    private String opcionD;
 
-   // private int opcionCorrecta;
+    private String opcionCorrecta;
 
+    @Override
+    public String toString() {
+        return "Pregunta{" +
+                "id=" + id +
+                ", categoria=" + categoria +
+                ", nivel=" + nivel +
+                ", descripcion='" + descripcion + '\'' +
+                ", opcionA='" + opcionA + '\'' +
+                ", opcionB='" + opcionB + '\'' +
+                ", opcionC='" + opcionC + '\'' +
+                ", opcionD='" + opcionD + '\'' +
+                ", opcionCorrecta='" + opcionCorrecta + '\'' +
+                '}';
+    }
 }
