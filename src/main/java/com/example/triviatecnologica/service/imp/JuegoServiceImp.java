@@ -1,5 +1,6 @@
 package com.example.triviatecnologica.service.imp;
 
+
 import com.example.triviatecnologica.entity.Juego;
 import com.example.triviatecnologica.entity.Pregunta;
 import com.example.triviatecnologica.entity.Usuario;
@@ -81,7 +82,7 @@ public class JuegoServiceImp implements JuegoService {
         juego.setCantCorrestas(0);
         juego.setCantIncorrectas(0);
 
-        juego.setUsuario(new Usuario(null,"sharon", 13, "123", "sharon@gmail.com"));
+        juego.setUsuario(new Usuario(null,"sharon", 16, "123", "sharon@gmail.com"));
 
         //usuarioService.obtenerNivelPorEdad(juego.getUsuario());
 

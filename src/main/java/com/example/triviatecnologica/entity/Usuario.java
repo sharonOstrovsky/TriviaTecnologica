@@ -21,4 +21,15 @@ public class Usuario {
     private int edad;
     private String telefono;
     private String mail;
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", telefono='" + telefono + '\'' +
+                ", mail='" + mail + '\'' +
+                '}';
+    }
 }
