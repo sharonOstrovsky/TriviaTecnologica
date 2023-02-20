@@ -40,7 +40,7 @@ public class UsuarioServiceImp implements UsuarioService {
                 usuarioDTO.getTelefono(),
                 usuarioDTO.getMail());
 
-        System.out.println(usuario);
+      //  System.out.println(usuario);
 
         return usuarioRepository.save(usuario);
     }

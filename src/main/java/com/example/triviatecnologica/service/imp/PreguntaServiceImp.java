@@ -5,12 +5,14 @@ import com.example.triviatecnologica.entity.Pregunta;
 import com.example.triviatecnologica.repository.PreguntaRepository;
 import com.example.triviatecnologica.service.service.PreguntaService;
 import com.example.triviatecnologica.utility.Categoria;
+import org.springframework.stereotype.Service;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 
+@Service
 public class PreguntaServiceImp implements PreguntaService {
 
 
@@ -32,8 +34,6 @@ public class PreguntaServiceImp implements PreguntaService {
             }
         }
 
-     //   preguntasUsuario.add(new Pregunta(null,Categoria.tecnologia,1,"hola mundo", "1", "2", "3", "4","A" ));
-       // preguntaRepository.save(new Pregunta(null,Categoria.tecnologia,1,"hola mundo", "1", "2", "3", "4","1" ));
         return preguntasUsuario;
     }
 
@@ -46,7 +46,7 @@ public class PreguntaServiceImp implements PreguntaService {
 
     public ArrayList<Pregunta> obtenerPreguntasPorCategoria(ArrayList<Pregunta> preguntasUsuario, Categoria categoria){
         ArrayList<Pregunta> preguntasCategoria = new ArrayList<>();
-        System.out.println("Categoria: "+categoria);
+       // System.out.println("Categoria: "+categoria);
         for (Pregunta pregunta: preguntasUsuario) {
             if(pregunta.getCategoria().equals(categoria)){
                 preguntasCategoria.add(pregunta);

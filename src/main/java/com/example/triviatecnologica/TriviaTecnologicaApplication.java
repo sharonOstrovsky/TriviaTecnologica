@@ -21,23 +21,15 @@ public class TriviaTecnologicaApplication {
 		ApplicationContext context = SpringApplication.run(TriviaTecnologicaApplication.class, args);
 
 
-		//ApplicationContext context = SpringApplication.run(ObRestDatajpaEntrega2Application.class, args);
-		PreguntaRepository repository = context.getBean(PreguntaRepository.class);
+	//	PreguntaService preguntaService = new PreguntaServiceImp(repository);
+	//	UsuarioService usuarioService = new UsuarioServiceImp();
 
-		PreguntaService preguntaService = new PreguntaServiceImp(repository);
-		UsuarioService usuarioService = new UsuarioServiceImp();
-		Juego juego = new Juego();
 
-		Usuario usuario = new Usuario(null,"sharon", 13, "123", "sharon@gmail.com");
+	//	JuegoService juegoService = new JuegoServiceImp(preguntaService, usuarioService);
 
-		juego.setUsuario(usuario);
-		System.out.println(juego.getUsuario().getEdad());
+	//	juegoService.Juego();
 
-		JuegoService juegoService = new JuegoServiceImp(preguntaService, usuarioService);
-
-		juegoService.Juego();
-
-		System.out.println("juego terminado");
+	//	System.out.println("juego terminado");
 
 
 	}
