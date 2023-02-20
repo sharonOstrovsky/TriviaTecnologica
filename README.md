@@ -25,6 +25,14 @@ conocimiento general, geografía, entretenimiento y matemática.
 * MySQL
 * Postman
 * React
+* Figma
+
+
+## Figma
+
+```
+https://www.figma.com/file/N2TUBjsXDa9IlLXYjuu2mu/Untitled?node-id=0%3A1&t=uSVnvvvXe9K1fyAI-1
+```
 
 ## Instalación
 
