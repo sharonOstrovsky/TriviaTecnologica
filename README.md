@@ -1,4 +1,4 @@
-# Trivia Tecnologica :medal_sports:
+# **Trivia Tecnologica** :medal_sports:
 
 
 ![](src/main/resources/logo.png)
