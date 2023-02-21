@@ -27,10 +27,7 @@ public class UsuarioServiceImp implements UsuarioService {
         return 0;
     }
 
-    @Override
-    public Usuario crearUsuario() {
-        return null;
-    }
+
 
     @Override
     public Usuario guardarUsuario(UsuarioDTO usuarioDTO) {

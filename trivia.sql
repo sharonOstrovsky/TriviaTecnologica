@@ -1,5 +1,16 @@
+CREATE DATABASE trivia;
+DROP DATABASE trivia;
 
--- tecnologia nivel 1
+select * from pregunta;
+select * from usuario;
+
+select * from pregunta where categoria=4;
+
+select count(id)from pregunta where categoria=0;
+
+update pregunta set id=169 where id=243;
+
+# tecnologia nivel 1
 
 insert into pregunta values (1,0, "¿Qué hace el ordenador si pulsa Control + Z?", 1, "Deshacer", "Copiar","Pegar","Deshacer","Cortar");
 insert into pregunta values (2,0, "¿Cual es la pagina mas visitada en el mundo?", 1, "Facebook", "MercadoLibre", "Google", "Google", "Youtube");
@@ -18,7 +29,7 @@ insert into pregunta values (14,0, "¿Que hace el ordenador si pulsas Control + 
 insert into pregunta values (15,0, "¿Que hace el ordenador si pulsas Control + C?", 1, "Deshacer", "Copiar", "Pegar","Copiar","Cortar");
 
 
--- tecnologia nivel 2
+# tecnologia nivel 2
 
 insert into pregunta values (16,0, "¿Cuál es el país con mayor desarrollo tecnológico en el 2022?", 2, "Finlandia", "EEUU", "Suiza", "Finlandia","China");
 insert into pregunta values (17,0, "¿Quién fundó la red social Facebook?", 2, "Elon Musk", "Steve Jobs", " Mark Zuckerberg", "Mark Zuckerberg","Bill Gates");
@@ -36,7 +47,7 @@ insert into pregunta values (28,0, "¿Qué nombre posee el logo de una manzana m
 insert into pregunta values (29,0, "El software es un conjunto de...", 2,"Componentes físicos de la computadora","Programas o aplicaciones","Empresas","Programas o aplicaciones","Países");
 insert into pregunta values (30,0, "El hardware es un conjunto de...", 2,"Empresas","Países","Componentes virtuales de la computadora","Componentes físicos de la computadora","Componentes físicos de la computadora");
 
--- tecnologia nivel 3
+# tecnologia nivel 3
 
 insert into pregunta values (31,0, "¿Quién inventó el teléfono móvil?", 3,"Martin Cooper","Tim Cook","Pekka Lundmark","Martin Cooper","Ren Zhengfei");
 insert into pregunta values (32,0, "¿En qué año se creó la primera computadora?", 3,"2020","1991","1833","1833","1899");
@@ -55,13 +66,13 @@ insert into pregunta values (44,0, "¿Qué significa las siglas VR?", 3,"Virtual
 insert into pregunta values (45,0, "¿Qué tipo de archivo es .mov?", 3,"Virus","Película o animación","Imagen","Película o animación","Ninguna de las anteriores");
 insert into pregunta values (46,0, "¿Qué significa CPU?", 3,"Computing power unit","Central power unit","Central processing unit","Central processing unit","Comand power unit");
 
--- update pregunta set opcionb="Mark Zuckerberg" where id=29;
+
 
 -- ///////////////////////////////////////////////////////////////
 
 
 
--- conocimiento general nivel 1
+# conocimiento general nivel 1
 
 insert into pregunta values (47,1, "¿Cuál es el planeta más grande del sistema solar?", 1, "Júpiter", "Luna", "Sol", "Júpiter","Venus");
 insert into pregunta values (48,1, "¿Cuál es el animal más grande del mundo?", 1, "Elefante", "Ballena azul", "Jirafa", "Ballena azul","Rinoceronte");
@@ -81,7 +92,7 @@ insert into pregunta values (61,1, "¿Cuántas cuerdas tiene una guitarra?", 1, 
 
 
 
--- conocimiento general nivel 2
+# conocimiento general nivel 2
 
 insert into pregunta values (62,1, "¿Cual es el nombre científico del hombre?", 2, "Homo sapiens", "Homo erectus","Homo ergaster", "Homo sapiens", "Homo habilis");
 insert into pregunta values (63,1, "La rana pertenece a la familia de los:", 2, "Peces", "Reptiles","Anfibios", "Anfibios", "Mamíferos");
@@ -99,7 +110,7 @@ insert into pregunta values (74,1, "¿Qué ciencia se ocupa del clima?", 2, "Llu
 insert into pregunta values (75,1, "¿Qué fruto da el árbol de olivo?", 2, "Aceituna", "Manzana","Guanabana", "Aceituna", "Higo");
 insert into pregunta values (76,1, "¿Cuál de estos es un planeta enano?", 2, "Saturno", "Venus","Plutón", "Plutón", "Tierra");
 
--- conocimiento general nivel 3
+# conocimiento general nivel 3
 
 insert into pregunta values (77,1, "¿Quién fue el principal responsable de la caída de la monarquía rusa?", 3, "Napoleón", "Anastasia","Rasputín", "Rasputín", "Catalina II");
 insert into pregunta values (78,1, "¿Que científico propuso las tres leyes del movimiento?", 3, "Isaac Newton", "Albert Einstein","Charles Darwin", "Isaac Newton", "Robert Oppenheimer");
@@ -119,7 +130,7 @@ insert into pregunta values (91,1, "¿Cuántos elementos hay en la tabla periód
 
 
 
--- matematica nivel 1
+# matematica nivel 1
 
 insert into pregunta values (92,2, "¿Cuánto es siete al cuadrado?", 1, "14", "28","49","49","56");
 insert into pregunta values (93,2, "¿Cuántos segundos hay en un día?", 1, "300", "68400", "86400", "86400", "80000");
@@ -138,7 +149,7 @@ insert into pregunta values (105,2, "¿Qué hora es si, tanto la aguja pequeña 
 insert into pregunta values (106,2, "¿Cuál es el resultado de multiplicar 7x9?", 1, "63", "72", "58", "63", "83");
 
 
--- matematica nivel 2
+#matematica nivel 2
 
 insert into pregunta values (107,2, "¿Cuanto es  1.92 ÷ 3?", 2, "0.64", "0.10", "0.11","0.64","1");
 insert into pregunta values (108,2, "¿Cómo escribirías esta fracción: cinco séptimos?", 2, "5/77", "5/6", "7/5","5/7","5/7");
@@ -157,7 +168,7 @@ insert into pregunta values (119,2, "¿Cuál es el único número par primo?", 2
 insert into pregunta values (120,2, "¿Cuánto es 1234 ÷ 0?", 2, "1234", "0", "1","0","Ninguna");
 insert into pregunta values (121,2, "¿Cuánto es 0 ÷ 0?", 2, "0", "Infinito", "Indeterminado","Indeterminado","Ninguna");
 
--- matematica nivel 3
+#matematica nivel 3
 
 insert into pregunta values (122,2, "Resuelva la siguiente ecuación: -15+ (-5x) =0", 3, "3", "-3", "0","-3","5");
 insert into pregunta values (123,2, "¿Cuál es el promedio de los primeros 50 números naturales?", 3, "35.7", "30", "25.5","25.5","50");
@@ -177,7 +188,7 @@ insert into pregunta values (136,2, "Si 10 + x es igual a 5 más 10, ¿cuál es 
 
 
 
--- geografia nivel 1
+#geografia nivel 1
 
 insert into pregunta values (182,4, "¿Cuántos continentes hay?", 1, "5", "3", "6", "6","7");
 insert into pregunta values (183,4, "¿Cuál es el país más grande del mundo?", 1, "Rusia", "Canada", "EEUU", "Rusia","Brasil");
@@ -195,13 +206,13 @@ insert into pregunta values (194,4, "¿En qué continente queda Perú?", 1, "Ame
 insert into pregunta values (195,4, "¿Cuál es el idioma predominante en América?", 1, "Ingles", "Italiano", "Portugues", "Español","Español");
 insert into pregunta values (196,4, "¿Cuál de los siguientes países no es de Europa?", 1, "Moldavia", "Polonia", "Catar", "Catar","Italia");
 
--- geografia nivel 2
+#geografia nivel 2
 
 insert into pregunta values (197,4, "¿Cual es la montaña más alta del mundo?", 2, "Kanchenjunga", "Denali", "K2","Monte everest","Monte everest");
 insert into pregunta values (198,4, "¿Cual es la ciudad más poblada del mundo?", 2, "Moscú", "Ottawa", "Tokio","Tokio","EEUU");
 insert into pregunta values (199,4, "¿Cuáles son los elementos básicos de un mapa?", 2, "Escala", "Todas las anteriores", "Coordenadas","Todas las anteriores","Simbología");
 insert into pregunta values (200,4, "¿Qué país se encuentra entre dos continentes?", 2, "Tokio", "India", "Venezuela","Turquia","Turquia");
-insert into pregunta values (201,4, " ¿Cual es la cordillera de montañas más larga del mundo?", 2, "Montañas Rocosas", "Sierras Madres", "Cordillera de los Andes","Cordillera de los Andes","Apalaches");
+insert into pregunta values (201,4, "¿Cual es la cordillera de montañas más larga del mundo?", 2, "Montañas Rocosas", "Sierras Madres", "Cordillera de los Andes","Cordillera de los Andes","Apalaches");
 insert into pregunta values (202,4, "¿Qué fenómeno genera las olas?", 2, "Arena", "Viento", "Lluvia","Viento","Peces");
 insert into pregunta values (203,4, "¿Cuántas estrellas tiene la bandera de China?", 2, "5", "6", "0","5","3");
 insert into pregunta values (204,4, "¿Dónde se encuentra el Taj Mahal?", 2, "España", "India", "Turquia","India","Peru");
@@ -213,7 +224,7 @@ insert into pregunta values (209,4, "¿Cuánto mide de alto el glaciar Perito Mo
 insert into pregunta values (210,4, "¿Cuál es la capital de Corea Del Sur?", 2, "Busan", "Seúl", "Pyongyang","Seúl","Tokio");
 insert into pregunta values (211,4, "¿Cuál es lago mas grande de Argentina?", 2, "Lago Viedma", "Lago del desierto", "Lago Correntoso","Lago Argentino","Lago Argentino");
 
--- geografia nivel 3
+#geografia nivel 3
 
 insert into pregunta values (212,4, "¿Dónde se pueden ver las Auroras boreales?", 3, "Polonia", "Eslovaquia", "Suiza","Finlandia","Finlandia");
 insert into pregunta values (213,4, "¿Qué río pasa por más países?", 3, "El Danubio", "Rio Amazonas", "Nilo","El Danubio","Misisipi");
@@ -233,10 +244,10 @@ insert into pregunta values (226,4, "¿Cuál es la máxima profundidad del océa
 
 
 
--- entretenimiento nivel 1
+#entretenimiento nivel 1
 insert into pregunta values (137,3, "¿Cómo se llama el perro de Mickey Mouse? ", 1, "Daisy", "Pluto", "Donald","Pluto","Goofy");
-insert into pregunta values (138,3, " ¿En Buscando a Nemo, como se llama el pez azul con memoria a corto plazo? ", 1, "Merlin", "Coral","Dory", "Dory","Darla");
-insert into pregunta values (139,3, " ¿Qué fruta es la casa de Bob Esponja? ", 1, "Manzana", "Piña","Pepino", "Piña","Roca");
+insert into pregunta values (138,3, "¿En Buscando a Nemo, como se llama el pez azul con memoria a corto plazo? ", 1, "Merlin", "Coral","Dory", "Dory","Darla");
+insert into pregunta values (139,3, "¿Qué fruta es la casa de Bob Esponja? ", 1, "Manzana", "Piña","Pepino", "Piña","Roca");
 insert into pregunta values (140,3, "¿En los Simpsons, cuántos hijos tiene Marge y Homero?", 1, "3", "2","4", "3","1");
 insert into pregunta values (141,3, "¿Cómo se llama el vaquero en Toy story?", 1, "Woody", "Buzz","Rex", "Woody","Andy");
 insert into pregunta values (142,3, "¿Cómo se llama el hermano de Phineas?", 1, "Linda", "Perry", "Jeremy","Ferb","Ferb");
@@ -256,7 +267,7 @@ insert into pregunta values (231,3, "¿Cómo se llama la tía de Spiderman?", 1,
 insert into pregunta values (232,3, "¿Qué utiliza batman para transportarse?", 1, "Batmanmovil", "Colectivo", "Batmovil","Batimovil","Batimovil");
 
 
--- entretenimiento nivel 2
+#entretenimiento nivel 2
 
 insert into pregunta values (152,3, "¿Cómo se llama el ayudante de Iron Man?", 2, "Jarvis", "Jim", "Phil","Jarvis","Gabriel");
 insert into pregunta values (153,3, "¿Qué enemigo de Batman se viste como payaso?", 2, "El pinguino", "El Guason", "Acertijo","El Guason","Dr Frio");
@@ -280,11 +291,11 @@ insert into pregunta values (236,3, "¿De qué color es el traje que utiliza Ven
 insert into pregunta values (237,3, "¿Cuántos años tiene Charli Grace D'Amelio?", 2, "18", "15", "20","18","19");
 
 
--- entretenimiento nivel 3
+#entretenimiento nivel 3
 
 insert into pregunta values (167,3, "¿Qué juego hizo famoso el genero 'Battle royale'?", 3, "Day Z", "Call of Duty", "Counter Strike","Fornite","Fornite");
 insert into pregunta values (168,3, "¿Quién ganó la copa mundial del 2014?", 3, "Francia", "Argentina", "Alemania","Alemania","Brasil");
-insert into pregunta values (169,3, "¿Cuál de estos villanos no es enemigo de Batman?", 3, "Acertijo", "Pingüino", "Magneto","Magneto","Guason");
+insert into pregunta values (243,3, "¿Cuál de estos villanos no es enemigo de Batman?", 3, "Acertijo", "Pingüino", "Magneto","Magneto","Guason");
 insert into pregunta values (170,3, "¿En qué año se estrenó ‘Stranger Things’?", 3, "2016", "2017", "2020","2016","2018");
 insert into pregunta values (171,3, "¿Cómo se llamaba el papá de Simba en “El Rey León”?", 3, "Nala", "Sarabi", "Uru","Mufasa","Mufasa");
 insert into pregunta values (172,3, "¿En que pais nacio Dua lipa?", 3, "Inglaterra", "Italia", "EEUU","Inglaterra","Alemania");
@@ -300,5 +311,5 @@ insert into pregunta values (181,3, "¿Cuál fue la serie de Netflix más vista 
 insert into pregunta values (238,3, "¿Cómo se llama la cancion donde canta Tini, La Joaqui y Steve Aoki?", 3, "Muñecas", "Oye", "Mañosa","Muñecas","Mission 08");
 insert into pregunta values (239,3, "¿Cuál es la persona con más seguidores en Instagram?", 3, "Cristiano Ronaldo", "Lionel Messi", "Kylie Jenner","Cristiano Ronaldo","Selena Gomez");
 insert into pregunta values (240,3, "¿De qué color es el traje del superheroe 'Flash'?", 3, "Amarillo", "Rojo", "Azul","Rojo","Naranja");
-insert into pregunta values (241,3, " ¿Qué porcentaje de la población accede a redes sociales mediante teléfonos móviles?", 3, "55%", "86%", "90%","98%","98%");
+insert into pregunta values (241,3, "¿Qué porcentaje de la población accede a redes sociales mediante teléfonos móviles?", 3, "55%", "86%", "90%","98%","98%");
 insert into pregunta values (242,3, "¿Quién es el mayor villano del universo de marvel?", 3, "Thanos", "Dormammu", "Red Skull","Thanos","Gorr");

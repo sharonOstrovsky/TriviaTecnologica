@@ -1,8 +1,6 @@
 package com.example.triviatecnologica.service.service;
 
 import com.example.triviatecnologica.dto.UsuarioDTO;
-import com.example.triviatecnologica.entity.Juego;
-import com.example.triviatecnologica.entity.Opcion;
 import com.example.triviatecnologica.entity.Pregunta;
 import com.example.triviatecnologica.entity.Usuario;
 import com.example.triviatecnologica.utility.Categoria;

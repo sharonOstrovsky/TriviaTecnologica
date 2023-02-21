@@ -51,7 +51,7 @@ public class TriviaController {
     @GetMapping("/usuarios")
     public List<Usuario> listarTodasLosUsuarios(){
         return usuarioService.listarUsuarios();
-          //retorna un html comidas
+
     }
 
     @PostMapping("/registro")
@@ -68,7 +68,7 @@ public class TriviaController {
     }
 
     @GetMapping("/preguntas")
-    public ArrayList<Pregunta> obtenerPreguntas(Model modelo){
+    public ArrayList<Pregunta> enviarPreguntas(Model modelo){
      //   modelo.addAttribute("preguntas", juegoService.listarPreguntas());
         return juegoService.listarPreguntas();
     }
