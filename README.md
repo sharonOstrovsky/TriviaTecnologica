@@ -55,7 +55,7 @@ git clone https://github.com/sharonOstrovsky/TriviaTecnologica.git
 
 ```
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/trivia
+spring.datasource.url=jdbc:mysql://localhost:3306/triviaTecnologica
 spring.datasource.username=nombreDeUsuario
 spring.datasource.password=clave
 spring.jpa.hibernate.ddl-auto=create
